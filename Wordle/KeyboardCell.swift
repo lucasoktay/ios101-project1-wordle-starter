@@ -23,6 +23,8 @@ class KeyboardCell: UICollectionViewCell {
   func configure(with string: String) {
     labelContainerView.layer.cornerRadius = 4.0
     labelContainerView.backgroundColor = .gray
+      self.string = string
+      label.text = string
     /* Exercise 2:
       1. Assign the argument `string` to the `self.string` private property (see line 14)
       2. Change the text of the label to the value of the passed in string
